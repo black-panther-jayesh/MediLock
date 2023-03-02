@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DOCTOR</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+        td {
+            background-color: white;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+    <!-- Services Start -->
+    <div class="container" style="padding: 30px;">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h1 class="display-4 border-bottom border-5">DOCTOR DASHBOARD</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Appointment Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container py-5">
+            <div class="row gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h1 class="display-4">DOCTOR</h1>
+                        <h3 class="d-inline-block text-white text-uppercase border-bottom border-top border-5">MEDICAL DOCUMENTS</h3>
+                    </div>
+                    <div class="doc-table">
+                        <button  class="btn btn-outline-dark rounded-pill border-2" onclick="location.href='pathology_view.html'"> Patho Docs</button>
+                        <br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th class="info">P_ID</th>
+                                <th class="info">NAME</th>
+                                <th class="info">D_ID</th>
+                                <th class="info">CATEGORY</th>
+                                <th class="info">REPORT_TYPE</th>
+                                <th class="info">VIEW DOCS</th>
+                            </tr>
+                            <tr>
+                                <td>124</td>
+                                <td>Aditi</td>
+                                <td>1</td>
+                                <td>Brain</td>
+                                <td>MRI</td>
+                                <td>
+                                    <a href="./uploads/BRAIN.jpg" class="btn border-shadow update" style="background-color:white;">
+                                        <span class="text-gradient"> <i class="fas fa-eye"
+                                                style="color: BLACK;"></i></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>124</td>
+                                <td>Aditi</td>
+                                <td>2</td>
+                                <td>Lungs</td>
+                                <td>Cancer</td>
+                                <td>
+                                    <a href="./uploads/cancer report.jpg" class="btn border-shadow update" style="background-color:white;">
+                                        <span class="text-gradient"> <i class="fas fa-eye"
+                                                style="color: BLACK;"></i></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>124</td>
+                                <td>Aditi</td>
+                                <td>3</td>
+                                <td>Blood</td>
+                                <td>Blood Reports</td>
+                                <td>
+                                    <a href="./uploads/blood.png" class="btn border-shadow update" style="background-color:white;">
+                                        <span class="text-gradient"> <i class="fas fa-eye"
+                                                style="color: BLACK;"></i></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <a href="#" class="btn border-shadow update" style="background-color:white;">
+                                        <span class="text-gradient"> <i class="fas fa-eye"
+                                                style="color: BLACK;"></i></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <a href="#" class="btn border-shadow update" style="background-color:white;">
+                                        <span class="text-gradient"> <i class="fas fa-eye"
+                                                style="color: BLACK;"></i></span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white text-center rounded p-5">
+                        <h1 class="mb-4">PATIENT DETAILS</h1>
+                        <div class="row g-3">
+                            <!-- <div class="P-INFO">
+                                <img src="./img/MEDI-LOCK.png" align="right" style="border: 3px solid black; display: block;">
+                            </div>
+                            <p>
+                                <button class="btn btn-outline-dark rounded-pill border-2" type="submit"
+                                style="width: 125px; float: right;">upload</button>
+                            </p> -->
+                    <!-- FORM START -->
+                            <form id="details">
+                                <div class="P-INFO">
+                                    <input type="text" class="form-control bg-light border-2" id="P_ID"
+                                        placeholder="124" style=" width: 530px; height: 55px;margin: 20px 10px;">
+                                </div>
+                                <div class="P-INFO">
+                                    <input type="text" class="form-control bg-light border-2" id="NAME"
+                                        placeholder="Aditi" style=" width: 530px; height: 55px;margin: 20px 10px;">
+                                </div>
+                                <div class="P-INFO">
+                                    <input type="text" class="form-control bg-light border-2" id="D_ID"
+                                        placeholder="D_ID" style=" width: 530px; height: 55px;margin: 20px 10px;">
+                                </div>
+                                <div class="P-INFO">
+                                    <input type="text" class="form-control bg-light border-2" id="CATEGORY"
+                                        placeholder="CATEGORY" style=" width: 530px; height: 55px; margin: 20px 10px;">
+                                </div>
+                                <div class="P-INFO">
+                                    <input type="text" class="form-control bg-light border-2" id="TYPE"
+                                        placeholder="TYPE" style=" width: 530px; height: 55px;margin: 20px 10px;">
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Javascript -->
+     
+    <script>
+         document.getElementById("details").addEventListener("submit", async (e)=> {
+            
+            e.preventDefault()
+            const P_ID = document.getElementById("P_ID").value;
+            const NAME = document.getElementById("NAME").value;
+            const D_ID = document.getElementById("D_ID").value;
+            const CATEGORY = document.getElementById("CATEGORY").value;
+            const TYPE = document.getElementById("TYPE").value;
+            const UPLOAD = document.getElementById("UPLOAD").value;
+            // console.log(P_ID, NAME, D_ID, CATEGORY, TYPE, UPLOAD);
+            const res = await fetch("http://localhost:3000/patient_dashboard", {
+                method: "POST",
+                headers: { 'Content-Type': 'application/json', },
+                body: JSON.stringify({
+                    P_ID,
+                    NAME,
+                    D_ID,
+                    CATEGORY,
+                    TYPE,
+                    UPLOAD
+                })
+            })
+            const data = await res.json()
+            // console.log(data);
+            if (data.status === "ok"){
+                alert("Data added successfully")
+            }
+            else{
+                alert("error occured");
+            }
+        })
+        
+    </script> 
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SIGN-UP</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .rounded-circle {
+            border-radius: 30% !important;
+        }
+    </style>
+</head>
+
+<body style="line-height: 0.5;">
+
+    <!-- HEAD START -->
+    <div class="container" style="padding-top: 30px;">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <p class="display-4 border-bottom border-5" style="color: #1D2A4D; font-size: 80px">SIGN-UP</p>
+                <h5 class="d-inline-block text-primary text-uppercase"></h5>
+            </div>
+        </div>
+    </div>
+    <!-- HEAD END -->
+
+    <!-- INPUT START -->
+
+    <div class="container-fluid bg-primary" style="padding-left: 140px ; margin: 0px;">
+        <div class="container py-5">
+            <div class="row gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img src="/img/signup.jpg" width="900px" height="696px" style="margin: 0px -145px;">
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white text-center rounded p-5">
+                        <h1 class="mb-4">PATIENT DETAILS</h1>
+                        <!-- FORM START -->
+                        <form id="form">
+
+                            <!-- <div class="row g-3">
+                                <div class="P-INFO">
+                                    <img src="./img/MEDI-LOCK.png" align="right" style="border: 3px solid black; display: block;">
+                            </div>
+                            <p>
+                                <button class= "btn btn-outline-dark rounded-pill border-2" type="submit"  style="width: 125px; float: right;">upload</button>
+                            </p> -->
+
+                            <div class="P-INFO">
+                                <input type="text" class="form-control bg-light border-2" placeholder="PATIENT ID"
+                                    id="P_ID" style=" width: 530px; height: 55px;">
+                            </div>
+                            <div class="P-INFO">
+                                <input type="text" class="form-control bg-light border-2" placeholder="PATIENT NAME"
+                                    id="NAME" style=" width: 530px; height: 55px;">
+                            </div>
+                            <div class="P-INFO">
+                                <input type="text" class="form-control bg-light border-2" placeholder="AGE" id="AGE"
+                                    style=" width: 530px; height: 55px;">
+                            </div>
+                            <div class="P-INFO">
+                                <select class="GENDER form-control bg-light " id="GENDER" id="GENDER"
+                                    style=" margin: 8px; width: 530px; height: 55px; align-items: center; border:2px solid black ;">
+                                    <option value="GENDER">GENDER</option>
+                                    <option value="MALE">MALE</option>
+                                    <option value="FEMALE">FEMALE</option>
+                                    <option value="OTHER">OTHER</option>
+                                </select>
+                                <!-- <input type="text" class="form-control bg-light border-2" placeholder="GENDER"
+                                    id="GENDER" style=" width: 530px; height: 55px;"> -->
+                            </div>
+
+                            <div class="P-INFO">
+                                <input type="text" class="form-control bg-light border-2" placeholder="MOBILE"
+                                    id="MOBILE" style=" width: 530px; height: 55px;">
+                            </div>
+                            <div class="P-INFO">
+                                <input type="password" class="form-control bg-light border-2" placeholder="PASSWORD"
+                                    id="PASSWORD" style="width: 530px; height: 55px;">
+                            </div>
+                            <div class="res-button">
+                                <button class="btn btn-outline-dark rounded-pill border-2 py-3 px-5" type="submit"
+                                    value="signup">SIGNUP</button>
+                                <button class="btn btn-outline-dark rounded-pill border-2 py-3 px-5" type="submit"> <a
+                                        href="index.html" style="color: #1d2a4d;">CANCEL</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+    <!-- INPUT END -->
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script>
+
+        document.getElementById("form").addEventListener("submit", async (e) => {
+
+            e.preventDefault()
+            const P_ID = document.getElementById("P_ID").value;
+            const NAME = document.getElementById("NAME").value;
+            const AGE = document.getElementById("AGE").value;
+            const GENDER = document.getElementById("GENDER").value;
+            const MOBILE = document.getElementById("MOBILE").value;
+            const PASSWORD = document.getElementById("PASSWORD").value;
+            // console.log(P_ID, NAME, AGE, GENDER, MOBILE, PASSWORD);
+            const res = await fetch("http://localhost:3000/signup", {
+                method: "POST", 
+                headers: { 'Content-Type': 'application/json', },
+                body: JSON.stringify({
+                    P_ID,
+                    NAME,
+                    AGE,
+                    GENDER,
+                    MOBILE,
+                    PASSWORD
+                })
+            })
+            const data = await res.json()
+            // console.log(data);
+            if (data.status === "ok") {
+                alert("user created Successfully")
+                window.location.href = "/login.html"
+            }
+            else {
+                alert("error occured");
+            }
+        })
+
+    </script>
+</body>
+
+</html>

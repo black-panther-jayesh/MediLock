@@ -1,0 +1,25 @@
+{
+    "short_name": "Meidcal Serivce",
+    "name": "Medi Lock",
+    "start_url":"www.medi-lock.com",
+    "scope":".",
+    "description":"This is a E-Commerce Website",
+    "icons": [
+      {
+        "src": "img/lj.jpg",
+        "type": "image/jpg",
+        "sizes": "144x144",
+        "purpose": "maskable"
+        
+      },
+      {
+        "src": "img/MEDI-LOCK1.png",
+        "type": "image/png",
+        "sizes": "591x591",
+        "purpose": "any"
+      }
+    ],
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
